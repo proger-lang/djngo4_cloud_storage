@@ -1,0 +1,32 @@
+{% load static %}
+<html>
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'shop1/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Ribeye+Marrow&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="h1">Pizza Shop</h1>
+    <h4>
+         {% for item in items %}
+        <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header ">
+                <h4 class="my-0 fw-normal">{{ item.name }}</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">{{ item.price }}<small class="text-body-secondary fw-light">/грн</small></h1>
+                <p class="ppp">{{ item.description }}</p>
+                <a class="nav" href="{% url 'shop1:detail' item.id %}">Купити</a>
+              </div>
+            </div>
+          </div>
+        {%endfor%}
+        </h4>
+      </body>
+    </html>

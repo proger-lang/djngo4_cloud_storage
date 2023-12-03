@@ -1,0 +1,47 @@
+body {
+  background-color: rgb(255, 255, 255);
+  margin-left: 90px;
+}
+
+.col{
+ 
+    display: inline-flex;
+    margin: 10px;
+    border: 1px solid grey;
+    width: 228px;
+    height: 350px;
+    padding: 10px 10px;
+    margin-left: 10px;
+
+}
+
+.nav{
+    background-color: #FF9302;
+    text-decoration: none;
+    border: 1px solid #FF9302;
+    border-radius: 25px;
+    padding: 8px 30px;
+    color: black;
+    margin-left: 105px;
+    justify-content: flex-end;
+    
+}
+
+.h1{
+    font-family: 'Ribeye Marrow', serif;
+}
+
+.card-header{
+    display: flex;
+  justify-content: center;
+}
+
+.pricing-card-title {
+    display: flex;
+  justify-content: center;
+}
+
+.ppp{
+    display: flex;
+    justify-content: center;
+}
